@@ -8,7 +8,7 @@
 
 - Python 3 и Node.js с npm.
 - GitHub CLI `gh` в `PATH`, авторизованный для `klawisha012/test-parallel`.
-- API: `cd backend`, затем установите `requirements.txt` и запустите `uvicorn app:app --reload`.
-- UI: `cd frontend`, `npm install`, затем `npm run dev`.
+- API: следуйте [backend/README.md](backend/README.md) и запустите сервер на порту 8000.
+- UI: `cd frontend`, `npm install`, затем `npm run dev`. Откройте адрес Vite и выберите **Real API**.
 
-Frontend и backend разрабатываются в отдельных ветках по общему контракту. Команды запуска будут уточнены после их реализации.
+Frontend и backend разрабатывались в отдельных ветках по общему контракту. Чтобы проверить реальный путь через Vite proxy после запуска обоих серверов, из корня выполните `python integration/smoke.py`. Проверка создаёт одну временную задачу в памяти backend.
