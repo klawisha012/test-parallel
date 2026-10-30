@@ -17,6 +17,7 @@ export function App() {
           Data source
           <select
             value={mode}
+            disabled={tasks.isCreating || tasks.pendingIds.size > 0}
             onChange={(event) => setMode(event.target.value === 'real' ? 'real' : 'mock')}
           >
             <option value="mock">Mock (in browser)</option>
